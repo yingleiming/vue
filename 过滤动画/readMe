@@ -1,0 +1,5 @@
+VUE 2.0之后 transition以组件形式进行开发
+写法L
+<transition>
+    需要运动的东西
+</transition>
