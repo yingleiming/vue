@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul id="demo">
+    <template v-for="(item,index) in items">
+        <p>{{parentMessage}} {{index}}:</p>
+        <p>{{item}}</p>
+    </template>
+</ul>
+<script src="vue/vue.js"></script>
+<script>
+    // $index 已经被移除
+    new Vue({
+        el:"#demo",
+        data:{
+            parentMessage:"清单",
+            items:[
+                "learn vue.js",
+                "learn jquery.js",
+                "learn react.js"
+            ]
+        }
+    });
+</script>
+</body>
+</html>

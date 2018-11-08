@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书管理案例</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../vue/vue.js"></script>
+    <script src="../js/bookstore.js"></script>
+</head>
+<body>
+
+<div class="container" id="app">
+    <h4 class="text-center">图书管理系统</h4>
+    <table class="table table-bordered">
+        <tr>
+            <td>书的名字</td>
+            <td>书的价格</td>
+            <td>书的数量</td>
+            <td>小计</td>
+            <td>操作</td>
+        </tr>
+        <tr v-for="book in bookList">
+            <td>{{book.name}}</td>
+            <td>{{book.price}}</td>
+            <td>
+                <button @click=book.count++>+</button>
+                <input type="text" v-model="book.count">
+                <button @click=book.count-->-</button>
+            </td>
+            <td>{{book.price*book.count}}</td>
+            <td>
+                <button type="button" class="btn btn-danger btn-sm" @click="reduce(book)">删除</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <b>总金额 : </b>
+                <b style="color: orangered;">{{total}}</b>
+            </td>
+        </tr>
+    </table>
+    <!--<form> 此处不能加form标签，否则报错-->
+    <div class="form-group">
+        <label for="bookName">书名:</label>
+        <input type="text" class="form-control" id="bookName" placeholder="请输入书的名字" v-model="addList.name">
+    </div>
+    <div class="form-group">
+        <label for="bookPrice">价格:</label>
+        <input type="number" class="form-control" id="bookPrice" placeholder="请输入书的价格" v-model="addList.price">
+    </div>
+    <div class="form-group">
+        <label for="bookCount">数量:</label>
+        <input type="number" class="form-control" id="bookCount" placeholder="请输入书的数量" v-model="addList.count">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary btn-xs" @click="add">添加</button>
+    </div>
+    <!--</form>-->
+
+</div>
+
+
+<scritp>
+
+    while(){
+
+    }
+
+
+    运营(3人)
+
+    小程序
+
+    考勤 周一下午周例会 周报每人都有
+
+    12月底 东西全做完 两个月 (最重要)
+
+    本周上红茶项目
+
+    手机 H5 WEB
+
+    饼状图 柱状图
+
+    echarts.js
+
+
+
+
+</scritp>
+
+
+
+
+</body>
+</html>

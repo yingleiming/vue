@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件对象-传参</title>
+</head>
+<body>
+
+<div id="box">
+    <button value="按钮" @click="show($event,10)">按钮</button>
+</div>
+
+<script src="vue/vue.js"></script>
+<script>
+
+    new Vue({
+        el:"#box",
+        data:{},
+        methods:{
+            show:function (ev,b) {
+                alert(ev.clientX);
+                alert(b);
+            }
+        }
+    });
+
+
+</script>
+</body>
+</html>

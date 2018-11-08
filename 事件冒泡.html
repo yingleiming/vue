@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件冒泡</title>
+</head>
+<body>
+
+<div id="box">
+    <!--冒泡-->
+    <div @click="show2();">
+        <!--方法1-->
+        <!--<button value="按钮" @click="show1($event)">按钮</button>-->
+        <button value="按钮" @click.stop="show1()">按钮</button>
+
+    </div>
+</div>
+
+<script src="vue/vue.js"></script>
+<script>
+
+    // 方法1
+    // new Vue({
+    //     el:"#box",
+    //     data:{},
+    //     methods:{
+    //         show1:function (ev) {
+    //             alert(1);
+    //             ev.cancelBubble=true;
+    //         },
+    //         show2:function () {
+    //             alert(2);
+    //         }
+    //     }
+    // });
+
+
+
+    // 事件冒泡
+
+    // 阻止事件冒泡  1. ev.cancelBubble=true  原生js方法
+
+
+    // 方法2
+    new Vue({
+        el:"#box",
+        data:{},
+        methods:{
+            show1:function () {
+                alert(1);
+            },
+            show2:function () {
+                alert(2);
+            }
+        }
+    });
+</script>
+</body>
+</html>

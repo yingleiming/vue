@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vif</title>
+    <style>
+        .activeColor{
+            color: green;
+        }
+        .disActiveColor{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <h1 v-if="active">现在你可以看到我</h1>
+    <h1 v-else>现在你看不到我</h1>
+</div>
+
+<script src="vue/vue.js"></script>
+
+<script>
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            active:true
+        }
+    });
+    setTimeout(function () {
+        vm.active=false
+    },2000)
+</script>
+
+
+</body>
+</html>

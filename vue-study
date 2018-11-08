@@ -1,0 +1,14 @@
+
+
+
+vue 交互 ($http)
+    如果vue想做交互，必须引入vue-resouce,从网站上下载或者使用cdn
+    <script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.js"></script>
+
+    交互的方式 get post jsonp 无论原生还是框架只此三种
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阻止默认行为</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+
+<!--方法一-->
+<!--<div id="box">-->
+    <!--<button value="按钮" @contextmenu="show($event)">按钮</button>-->
+<!--</div>-->
+
+<script>
+
+    // 使用原生js阻止事件默认行为
+    // new Vue({
+    //     el:"#box",
+    //     data:{},
+    //     methods:{
+    //         show:function (ev) {
+    //             alert(1);
+    //             ev.preventDefault();
+    //         }
+    //     }
+    // });
+</script>
+
+
+    <!--方法二-->
+    <div id="box">
+        <button value="按钮" @contextmenu.prevent="show()">按钮</button>
+    </div>
+
+<script>
+
+    // 使用vue提供的方法 @contextmenu.prevent
+    new Vue({
+        el:"#box",
+        data:{},
+        methods:{
+            show:function () {
+                alert(1);
+            }
+        }
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

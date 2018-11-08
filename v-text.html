@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!--这种方式在网速比较慢的时候或者快速刷新的时候会出现花括号闪现的问题-->
+        <span>{{msg}}</span>
+        <br>
+        <!--使用v-text能够解决花括号闪现的问题-->
+        <span v-text="msg"></span>
+    </div>
+    <script src="vue/vue.js"></script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:"#app",
+                data:{
+                    msg:"hello NIT!"
+                },
+                methods:{
+
+                }
+            });
+        }
+    </script>
+</body>
+</html>

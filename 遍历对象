@@ -1,0 +1,38 @@
+
+遍历对象
+    v-for
+        也可以使用v-for遍历对象。除了$index外，在作用域内还可以访问另外一个特殊变量$key
+        <ul id="repeat-object">
+            <li v-for="(value,key) in object"> {{key}}:{{value}}</li>
+        </ul>
+        new Vue({
+            el:"$repeat-object",
+            data:{
+                object:{
+                    firstName:"peter",
+                    lastName:"lee",
+                    sex:"man",
+                    age:28
+                }
+            }
+        });
+
+        示例：
+        <ul id="repeat-object">
+            <li v-for="(value,key) in object"> {{key}}:{{value}}</li>
+        </ul>
+        <script src="vue.js"></script>
+
+        <script>
+            new Vue({
+                el:"#repeat-object",
+                data:{
+                    object:{
+                        firstName:"peter",
+                        lastName:"lee",
+                        sex:"man",
+                        age:28
+                    }
+                }
+            });
+        </script>

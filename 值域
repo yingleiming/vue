@@ -1,0 +1,6 @@
+
+v-for值域：
+    v-for 也可以接收一个整数，此时它将重复模板次数
+    <div id="app">
+        <span v-for="number in 10">{{number}}</span>
+    </div>

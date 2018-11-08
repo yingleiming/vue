@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class的第一种用法</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            background: blue;
+        }
+    </style>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+<div id="box">
+    <strong :class="[red,blue]">文本...</strong>
+</div>
+
+<script>
+    new Vue({
+        el: "#box",
+        data: {
+            red:"red",
+            blue:"blue"
+        },
+        methods: {
+
+        }
+    });
+</script>
+</body>
+</html>

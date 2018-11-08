@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue/vue.js"></script>
+    <script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.js"></script>
+</head>
+<body>
+<div id="box">
+    <input type="button" value="提交" @click="get()">
+</div>
+
+<script>
+    new Vue({
+        el: "#box",
+        data: {},
+        methods: {
+           get:function () {
+              this.$http.get('aa.txt').then(function(){
+                  alert("成功");
+              },function(){
+                  alert("失败")
+              });
+           }
+        }
+    });
+</script>
+</body>
+</html>

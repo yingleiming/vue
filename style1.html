@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>style</title>
+    <script src="vue/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <p :style="[c,i]">NIT</p>
+</div>
+
+<script>
+    new Vue({
+        el: "#box",
+        data: {
+          c:{
+              color:"red",
+              fontSize:"20px",
+              backgroundColor:"#00f",
+
+          },
+          i:{
+             fontStyle:"italic",
+              paddingLeft:"30px"
+          }
+        },
+        methods: {}
+    });
+</script>
+
+<div id="box2">
+    <h1 :style="sty">NIT IS INSTEAD OF “南阳理工学院”</h1>
+</div>
+
+
+<script>
+    new Vue({
+        el:"#box2",
+        data:{
+            sty:{
+                color:"blue",
+                fontSize: "18px",
+
+            }
+        }
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+<div id="box">
+    <strong :class="[red]">文本...</strong>
+</div>
+
+<script>
+    new Vue({
+        el: "#box",
+        data: {
+          red:"red",
+        },
+        methods: {
+
+        }
+    });
+</script>
+</body>
+</html>
