@@ -40,7 +40,17 @@
 <!--只实现了显示与隐藏,但是不能运动-->
 
 <!--单纯放transition标签是没有效果的-->
+transition组件：
+    vue提供了transition封装组件，使用此组件可以在下列情形中，给任何元素和组件添加进入、离开时的过渡。
 
+前提:
+    在以下情形中;使用transition组件;添加的是 进入/离开 的过渡，而不是其他。
+
+以下情形中：
+    a:条件渲染使用（v-if）
+    b:条件展示使用 （v-show）
+    c:动态组件
+    d:组件根节点
 
 <div id="app">
     <input type="button" value="点击显示隐藏" @click="show=!show">
