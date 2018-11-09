@@ -4,47 +4,35 @@
     <meta charset="UTF-8">
     <title>a</title>
     <style>
-        .conent{
+        ._cont{
             width: 100px;
             height: 100px;
             background-color: #f00;
         }
         /*定义进入过渡的开始状态*/
         .fade-enter{
-            width: 100px;
-            height: 100px;
             opacity: 0;
         }
         /*定义进入过渡生效时的状态*/
         .fade-enter-active{
-            transition: 1s all ease;
+            transition: opacity 1s;
         }
         /*定义进入过渡的结束状态*/
         .fade-enter-to{
-            width: 200px;
-            height: 200px;
             opacity: 1;
         }
         /*定义离开过渡的开始状态*/
         .fade-leave{
-            width: 200px;
-            height: 200px;
             opacity: 1;
         }
         /*定义离开过渡生效时的状态*/
         .fade-leave-active{
-            transition: 1s all ease;
+            transition: opacity 1s;
         }
         /*定义离开过渡的结束状态*/
         .fade-leave-to{
-            width: 200px;
-            height: 200px;
             opacity: 0;
         }
-
-
-
-
     </style>
 </head>
 <body>
@@ -57,7 +45,7 @@
 <div id="app">
     <input type="button" value="点击显示隐藏" @click="show=!show">
     <transition name="fade">
-        <div class="conent" v-show="show"></div>
+        <div class="_cont" v-show="show"></div>
     </transition>
 </div>
 
