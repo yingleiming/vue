@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+
+
+<!--添加重复数据，使用track-by="$index"方法，$index也可以是后台传过来的数据-->
+<div id="app">
+    <input type="button" value="添加" @click="add()">
+    <ul>
+        <li v-for="val in arr" track-by="$index">{{val}}</li>
+    </ul>
+</div>
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            arr:["a","b","c"]
+        },
+        methods: {
+            add:function () {
+                this.arr.push("d");
+            }
+        }
+    });
+</script>
+</body>
+</html>
