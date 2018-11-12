@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义过滤器</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    {{a | toDou}}
+</div>
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            a:100
+        },
+        methods: {
+
+        },
+        filters:{
+            toDou:function (input) {
+                if(input<10){
+                    return "0"+input;
+                }else{
+                    return input;
+                }
+            }
+        }
+    });
+    //目前不支持这种写法
+    // Vue.filter('toDou',function (input) {
+    //     if(input<10){
+    //         return "0"+input;
+    //     }else{
+    //         return ""+ input;
+    //     }
+    // });
+</script>
+</body>
+</html>

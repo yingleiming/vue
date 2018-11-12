@@ -8,7 +8,8 @@
 <body>
 
 
-<!--添加重复数据，使用track-by="$index"方法，$index也可以是后台传过来的数据-->
+<!--添加重复数据，使用track-by="索引"方法，$index也可以是后台传过来的数据-->
+<!--track-by 提交循环性能-->
 <div id="app">
     <input type="button" value="添加" @click="add()">
     <ul>
