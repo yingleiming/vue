@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>监听数据变化</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <h3>{{a}}</h3>
+    <h3>{{b}}</h3>
+
+</div>
+
+<script>
+    var vm=new Vue({
+        el: "#app",
+        data: {
+           a:"1",
+           b:"2"
+        },
+        methods: {}
+    });
+    document.onclick=function () {
+        vm.a=10
+    }
+    vm.$watch("a",function () {//浅度监视
+       this.b=100;
+    })
+</script>
+</body>
+</html>

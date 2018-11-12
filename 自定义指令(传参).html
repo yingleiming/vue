@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义属性/传参</title>
+    <script src="vue/vue.js"></script>
+</head>
+<body>
+
+<div id="app" v-color="'blue'">
+    <h3>{{msg}}</h3>
+</div>
+<script>
+    // 传参
+    Vue.directive('color',function(c){
+        bind:{
+            this.el.style.backgroundColor=c
+        }
+    });
+    new Vue({
+        el: "#app",
+        data: {
+            msg:"自定义属性"
+        },
+        methods: {
+
+        }
+    });
+</script>
+</body>
+</html>
