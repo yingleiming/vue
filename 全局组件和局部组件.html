@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue demo</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+	
+<div id="app">
+	<my-component></my-component>
+	<my-component></my-component>
+	<my-ylm></my-ylm>
+	<you-name></you-name>
+</div>
+
+
+<div class="add">
+	<my-component></my-component>
+	<add-tml></add-tml>
+</div>
+
+
+
+
+<script>
+	//定义一个全局组件
+	// let data={
+	// 	count:0
+	// }
+	Vue.component('my-component',{
+		template:"<div @click = 'count++'>{{count}}</div>",
+		data:function(){
+			// return data
+			return{
+				count:0
+			}
+		},
+	});
+	new Vue({
+		el:"#app",
+		//定义一个局部组件
+		components:{
+			'my-ylm':{
+				template:"<b>我是局部组件</b>"
+			},
+			'youName':{
+				template:"<b>this is a strong tag</b>"
+			}
+		}
+	});
+	new Vue({
+		el:".add",
+		//定义一个局部组件
+		components:{
+			'add-tml':{
+				template:"我是一个add局部组件"
+			}
+		}
+	});
+
+</script>
+
+
+
+</body>
+</html>
