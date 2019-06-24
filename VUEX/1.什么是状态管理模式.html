@@ -19,25 +19,51 @@
 </head>
 <body>
 <div id="app">
+    <div style="background: red;">{{val}}</div>
     <div @click="btn()">{{name}}</div>
-    <my-A :name="name" id="myA"></my-A>
+    <my-A :name="name" :age=age id="myA" @click = "getValue"></my-A>
 </div>
 
 <script src="../vue/vue.js"></script>
 <script>
+    //父传子
+    //子传父，又复杂了一些
+
     var myA = {
-        template:"<div>我是myA <div>{{name}}</div></div>",
-        props:["name"]
+        props:["name","age"],
+        template:`
+        <div>
+        我是myA <div>{{name}}{{age}}</div>
+        <div @click="cgo">我要传递数据给父级</div>
+        </div>
+        `,
+        data:function(){
+            return {
+                g:"我来自mya"
+            }
+        },
+        methods: {
+            cgo:function () {
+                console.log("dddd")
+                this.$emit("g",this.g);
+            }
+        }
     };
    var app = new Vue({
        //创建一个挂载点
        el:"#app",
        data:{
-           name:"数据，方法，状态"
+           name:"数据，方法，状态",
+           age:18,
+           val:""
        },
        methods:{
            btn:function () {
                this.name = "状态改变了！！！"
+           },
+           getValue:function (val) {
+               this.val = val;
+               console.log(val);
            }
        },
        components:{
