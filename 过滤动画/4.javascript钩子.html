@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript钩子</title>
+    <style>
+        .bound-enter-active{
+            animation: bound-in 3s;
+        }
+        .bound-leave-active{
+            animation: bound-in 3s reverse;
+        }
+        @keyframes bound-in {
+            0%{
+                transform: scale(0);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <transition name="bound">
+        <table v-if="items.length>0">
+            <tr v-for="item in items">
+                <td v-text="item.name"></td>
+                <td v-text="item.content"></td>
+            </tr>
+        </table>
+        <p v-else="">Sorry,no items found</p>
+
+    </transition>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            items:[
+                {name:"a",content:"11111111111"},
+                {name:"b",content:"22222222222"},
+                {name:"c",content:"33333333333"},
+                {name:"d",content:"44444444444 "},
+            ]
+        }
+    })
+</script>
+
+
+
+</body>
+</html>

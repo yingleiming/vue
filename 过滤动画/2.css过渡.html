@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css过渡</title>
+</head>
+<style>
+    /*开始动画时的初始状态*/
+    .act-enter{
+
+    }
+    /*执行动画中的状态*/
+    .act-enter-active{
+        background-color: #000;
+        color: red;
+        font-size:20px;
+        transition: all 5s ease;
+    }
+    /*执行动画结束后的状态*/
+    .act-enter-to{
+
+    }
+    /*返回动画前的状态*/
+    .act-leave{
+
+    }
+
+    /*返回动画中的状态*/
+    .act-leave-active{
+        /*transition: all 2s ease;*/
+    }
+    /*返回动画后的状态*/
+    .act-leave-to{
+        background-color: green;
+        color: #fff;
+        font-size: 50px;
+    }
+</style>
+<body>
+
+<div id="app">
+    <button id="actButton" @click="cssShow">click me</button>
+    <transition name="act">
+        <h1 v-if="show">this is a dialog about how to learn English</h1>
+    </transition>
+</div>
+
+
+ <script>
+    new Vue({
+        el:"#app",
+        data:{
+            show:true
+        },
+        methods:{
+            cssShow:function(){
+                // alert("+++");
+                this.show = !this.show
+            }
+        }
+    })
+</script>
+
+
+</body>
+</html>
