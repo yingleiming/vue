@@ -7,10 +7,9 @@
 <body>
 
 <ul id="demo">
-    <template v-for="(item,index) in items">
-        <p>{{parentMessage}} {{index}}:</p>
-        <p>{{item}}</p>
-    </template>
+    <li v-for="(item,index) in items">
+        {{item}}
+    </li>
 </ul>
 <script src="vue/vue.js"></script>
 <script>
@@ -20,9 +19,10 @@
         data:{
             parentMessage:"清单",
             items:[
-                "learn vue.js",
-                "learn jquery.js",
-                "learn react.js"
+                {title:"1",content:"111111111111"},
+                {title:"1",content:"111111111111"},
+                {title:"1",content:"111111111111"},
+                {title:"1",content:"111111111111"},
             ]
         }
     });

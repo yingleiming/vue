@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1437d424-ae03-4d2b-b5c9-0d35a43b7b4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/过滤动画/2.css过渡.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/过滤动画/3.css动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/过滤动画/4.javascript钩子.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/chooseCity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/city" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/过滤动画/1.1单元素过渡.html" beforeDir="false" afterPath="$PROJECT_DIR$/过滤动画/1.1单元素过渡.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v-for2.html" beforeDir="false" afterPath="$PROJECT_DIR$/v-for2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,15 +20,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/过滤动画/2.css过渡.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/过滤动画/3.css动画.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
@@ -37,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/过滤动画/4.javascript钩子.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
@@ -47,10 +38,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/百度下拉列表.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-448" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projects/chooseCity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+              <folding>
+                <element signature="e#1610#1642#0" />
+                <element signature="e#693#725#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v-for2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v-for3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v-for.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="47" selection-start-line="47" selection-end-line="52" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/city">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6842">
+              <caret line="415" column="42" lean-forward="true" selection-start-line="415" selection-start-column="42" selection-end-line="415" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/bookstore.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/过滤动画/1.5过渡的类名.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" selection-end-column="68" />
+            <state relative-caret-position="738">
+              <caret line="41" selection-start-line="41" selection-end-line="41" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -63,6 +117,33 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&gt;</find>
+      <find>},</find>
+      <find>cityName</find>
+      <find>dataContent</find>
+      <find>&quot;data-id&quot;</find>
+      <find>data-content</find>
+      <find>data-id</find>
+      <find>广州</find>
+      <find>上海</find>
+      <find>长沙</find>
+      <find>天津</find>
+      <find>武汉</find>
+      <find>郑州</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>,&quot;cityName&quot;:</replace>
+      <replace>},</replace>
+      <replace>&quot;},</replace>
+      <replace>data-content</replace>
+      <replace>data-id</replace>
+      <replace>dataContent data-content</replace>
+      <replace>dataContent</replace>
+      <replace>dataId</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,12 +159,16 @@
         <option value="$PROJECT_DIR$/过滤动画/2.css过渡.html" />
         <option value="$PROJECT_DIR$/过滤动画/3.css动画.html" />
         <option value="$PROJECT_DIR$/过滤动画/4.javascript钩子.html" />
+        <option value="$PROJECT_DIR$/v-for.html" />
+        <option value="$PROJECT_DIR$/v-for2.html" />
+        <option value="$PROJECT_DIR$/projects/city" />
+        <option value="$PROJECT_DIR$/projects/chooseCity.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="310" />
-    <option name="y" value="140" />
+    <option name="x" value="550" />
+    <option name="y" value="66" />
     <option name="width" value="1155" />
     <option name="height" value="775" />
   </component>
@@ -92,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,18 +188,22 @@
             <path>
               <item name="vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="过滤动画" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -155,6 +245,9 @@
       <workItem from="1563114622688" duration="3498000" />
       <workItem from="1563376261165" duration="1201000" />
       <workItem from="1563412594668" duration="14871000" />
+      <workItem from="1563461587613" duration="89000" />
+      <workItem from="1563498264036" duration="1245000" />
+      <workItem from="1566976758121" duration="17106000" />
     </task>
     <task id="LOCAL-00001" summary="修改项目名称">
       <created>1548168667241</created>
@@ -184,23 +277,31 @@
       <option name="project" value="LOCAL" />
       <updated>1563377421110</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="状态管理模式">
+      <created>1563461599054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563461599054</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27621000" />
+    <option name="totallyTimeSpent" value="46061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24124256" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15994713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -292,16 +393,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/过滤动画/1.5过渡的类名.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/过滤动画/2.css过渡.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="864">
           <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
@@ -313,10 +407,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/过滤动画/1.5过渡的类名.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" selection-start-line="41" selection-end-line="41" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bookstore.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/过滤动画/4.javascript钩子.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/百度下拉列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v-for3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#b#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v-for.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="47" selection-start-line="47" selection-end-line="52" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v-for2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/city">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6842">
+          <caret line="415" column="42" lean-forward="true" selection-start-line="415" selection-start-column="42" selection-end-line="415" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/chooseCity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding>
+            <element signature="e#1610#1642#0" />
+            <element signature="e#693#725#0" />
+          </folding>
         </state>
       </provider>
     </entry>
