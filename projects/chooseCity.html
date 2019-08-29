@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="iconfont.css">
     <title>选择城市</title>
     <style>
         *{
@@ -20,21 +21,50 @@
         ul li{
             list-style: none;
         }
+        #head>img{
+            width: 100%;
+            height: 13rem;
+        }
+        #main{
+            background: #F0F0F0;
+            border-bottom: 1px solid #ddd;
+        }
+        /*搜索城市*/
+        #findCity{
+            height: 4rem;
+            line-height: 4rem;
+            background: #F0F0F0;
+            padding: 0 3%;
+        }
+        #findCity .findCity{
+            /* padding: 0 5%; */
+            position: relative;
+            width: 90%;
+            margin: auto;
+        }
+        #searchCity{
+            width: 100%;
+            height: 4rem;
+            border-radius: 2rem;
+            outline: none;
+            border: 1px solid #ccc;
+            padding-left: 3rem;
+        }
+        #findCity .cityIcon{
+            position: absolute;
+            left: 1rem;
+        }
         /*热门城市*/
         #hotCity{
             font-size: 1.4rem;
+            padding: 0 5%;
+            background: #F0F0F0;
         }
         .hotCityTile{
-            width: 90%;
-            padding: 0 5%;
             color: #929292;
-            background: #F0F0F0;
-            height: 4rem;
-            line-height: 4rem;
         }
         #hotCity>ul{
-            width: 90%;
-            margin: auto;
+
         }
         #hotCity>ul>li{
             height: 4rem;
@@ -43,7 +73,33 @@
             padding-right: 5%;
         }
         #main{
+            padding-top: 1rem;
         }
+        /*当前城市*/
+        #LocalCity{
+            font-size: 1.4rem;
+            padding: 0 5%;
+            background: #F0F0F0;
+            margin-top: 1rem;
+        }
+        #LocalCity>.LocalCityName{
+            display: flex;
+            height: 4rem;
+            line-height: 4rem;
+        }
+        #LocalCity>.LocalCityTitle{
+            color: #929292;
+        }
+        #site{
+            font-weight: normal;
+            color: #CC9966;
+            margin-left: 5px;
+        }
+        .siteIcon{
+            font-size: 2rem;
+            color: #929292;
+        }
+        /*城市列表*/
         #cityList{
             font-size: 1.4rem;
         }
@@ -65,9 +121,11 @@
         /*导航*/
         #wordList{
             position: fixed;
-            top: 10%;
-            right: 5%;
             font-size: 1rem;
+            right: 5%;
+            bottom: 0;
+            top: 40%;
+            margin: 0 auto;
         }
         #wordList>ul>li{
             height: 2rem;
@@ -79,15 +137,37 @@
 <body>
 
 <div id="app">
-    <div id="main">
-        <div id="hotCity">
-            <p class="hotCityTile">{{hotCityTile}}</p>
-            <ul>
-                <li v-for="item in hotCityList">
-                    {{ item.dataContent }}
-                </li>
-            </ul>
-        </div>
+    <div id="">
+        <header id="head">
+            <img src="../images/head.png" alt="head">
+        </header>
+        <main id="main">
+            <!--搜索城市-->
+            <div id="findCity">
+                <label for="searchCity" class="findCity">
+                    <em class="cityIcon iconfont icon-grabble"></em>
+                    <input id="searchCity" type="search" placeholder="请输入城市名称和首字母查询" autocomplete="off">
+                </label>
+            </div>
+            <!--当前城市-->
+            <div id="LocalCity">
+                <p class="LocalCityTitle">{{LocalCityTitle}}</p>
+                <div class="LocalCityName">
+                    <em class="siteIcon iconfont icon-site"></em>
+                    <strong id="site">{{LocalCity}}</strong>
+                </div>
+            </div>
+            <!--热门城市-->
+            <div id="hotCity">
+                <p class="hotCityTile">{{hotCityTile}}</p>
+                <ul>
+                    <li v-for="item in hotCityList">
+                        {{ item.dataContent }}
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!--城市列表-->
         <div id="cityList">
             <ul>
                 <li v-for="item in cityList" :class="item.dataId.length<5?'active':'noactive'">
@@ -95,6 +175,7 @@
                 </li>
             </ul>
         </div>
+        <!--字母导航-->
         <nav id="wordList">
             <ul>
                 <li v-for="item in wordList">{{item}}</li>
@@ -107,8 +188,10 @@
 <script src="../vue/vue.js"></script>
 <script>
     new Vue({
-        el:"#main",
+        el:"#app",
         data:{
+            LocalCityTitle:"当前城市",
+            LocalCity:"北京",
             hotCityTile:"热门城市",
             hotCityList:[
                 {"dataId":"440100","dataContent":"广州"},
