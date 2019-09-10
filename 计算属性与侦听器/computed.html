@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性与侦听器</title>
+</head>
+<body>
+
+    <div id="app">
+        <lable for="">
+            姓：<input type="text" placeholder="请输入姓氏" v-model="firstName">
+        </lable>
+        <p></p>
+        <lable for="">
+            名：<input type="text" placeholder="请输入名字" v-model="lastName">
+        </lable>
+        <p>-------------------------------------------</p>
+        姓名：<input type="text" v-model="fullNameOne">
+    </div>
+
+
+    <script src="../vue/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data(){
+                return{
+                    firstName:"",
+                    lastName:"",
+                    fullNameOne:"",
+                }
+            },
+            computed:{
+                fullNameOne: {
+                    get(){
+                        return this.firstName + "·" + this.lastName;
+                    },
+                    set(value){
+                        // console.log(`触发set方法 ${value}`);
+                        let names = value;
+                        this.firstName = names[0];
+                        this.lastName = names[1];
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
